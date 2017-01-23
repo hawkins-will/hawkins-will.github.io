@@ -81,7 +81,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 a {
@@ -93,6 +93,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+a:hover {
+  background-color: rgba(125,125,125,0.2);
 }
 
 img {
@@ -129,6 +133,16 @@ footer {
   height: 30px;
 }
 
-a:hover {
-  background-color: rgba(125,125,125,0.2);
+.quote {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.speaker {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	padding-left: center;
 }
