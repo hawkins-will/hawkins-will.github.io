@@ -1,35 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-ng-app="portfolioApp">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Will Hawkins</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
+    <script src="app.js"></script>
   </head>
   <body>
     <header>
-      <h1>Will Hawkins</h1>
-      <img src="Will_Mustache.jpg" alt="Will's Glorious Face">
-      <h2>Cardboard-Mustachioed Developer In-Training</h2>
-
+      <p class="home"><a data-ui-sref="categoryIndex" data-ng-click="search = null">H<img class="logo" src="/images/+One_Logo.png" alt="+One Logo">ME</p></a>
+      <h1 class="title">+One</h1>
+      <div class="headerRight"><input placeholder="Search by Keyword" type="text" data-ng-model="search"><a data-ui-sref="activityIndex({category: search})"><button class="searchButton" type="button" name="button">Search</button></a><div>
     </header>
-
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="skills.html">Skills</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-    <section class="content">
-      <div class="intro">
-        <h3>Please note that this is a work in progress.</h3>
-    </section>
-
-    <footer>
-      <p>Last Edited February 1st, 2017</p>
-    </footer>
-
+    <main data-ui-view></main>
   </body>
 </html>
