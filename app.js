@@ -68,6 +68,14 @@ angular
     })
   }
 
-  function IndexControllerFunction(){
+  function IndexControllerFunction(){}
 
-  }
+  function AboutControllerFunction(){}
+
+  function ContactControllerFunction(){}
+
+  function PortfolioControllerFunction(){}
+
+  function ResumeControllerFunction(){}
+
+  function SkillsControllerFunction(){}
