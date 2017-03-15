@@ -50,7 +50,7 @@ angular
     })
     .state("Portfolio", {
       url: "/portfolio",
-      templateUrl: "ng-views/portfoli.html",
+      templateUrl: "ng-views/portfolio.html",
       controller: "PortfolioController",
       controllerAs: "vm"
     })
