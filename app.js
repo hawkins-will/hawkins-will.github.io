@@ -67,3 +67,7 @@ angular
       controllerAs: "vm"
     })
   }
+
+  function IndexControllerFunction(){
+
+  }
