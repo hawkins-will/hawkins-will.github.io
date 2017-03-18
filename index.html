@@ -12,34 +12,36 @@
   </head>
   <body>
     <header>
-      <h1 class="name">Will Hawkins <span class="title">full-stack developer</span></h1>
+      <h1 class="name"><a href="#">Will Hawkins</a><span class="title"> full-stack developer</span></h1>
       <nav>
-        <a data-ui-sref="Index">Home</a>
-        <a data-ui-sref="About">About Me</a>
-        <a data-ui-sref="Skills">Skills</a>
-        <a data-ui-sref="Portfolio">Portfolio</a>
-        <a data-ui-sref="Resume">Resume</a>
-        <a data-ui-sref="Contact">Contact</a>
+        <a href="#">About Me</a>
+        <a href="#">Skills</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Resume</a>
+        <a href="#" class="final_link">Contact</a>
       </nav>
     </header>
-
     <main>
-      <section class="about_section">
-        <h1>About Section</h1>
+      <section id="headline">
+        <h1 class="sectionHeader">Headline Section</h1>
       </section>
-      <section class="skills_section">
-        <h1>Skills Section</h1>
+      <section id="about">
+        <h1 class="sectionHeader">About Section</h1>
       </section>
-      <section class="portfolio_section" data-ui-view></section>
-      <section class="resume_section">
-        <h1>Resume Section</h1>
+      <section id="portfolio" data-ui-view></section>
+      <section id="resume">
+        <h1 class="sectionHeader">Resume</h1>
+        <img class="resume" src="/images/Resume.jpeg" alt="Will Hawkins' Resume">
       </section>
-      <section class="contact_section">
-        Contact Section
+      <section id="skills">
+        <h1 class="sectionHeader">Skills Section</h1>
+      </section>
+      <section id="contact">
+        <h1 class="sectionHeader">Contact Section</h1>
       </section>
     </main>
     <footer>
-      <p>Last Edited February 1st, 2017</p>
+      <p>Last Edited March 18th, 2017</p>
     </footer>
   </body>
 </html>
