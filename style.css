@@ -57,19 +57,50 @@ html {
 }
 
 header {
+	position: fixed;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	z-index: 1;
 	display: flex;
-	flex-direction: column;
-	background-color: rgba(0,128,128,0.5);
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	height: 50px;
+	background-color: rgba(0,168,168,1);
+}
+
+.name {
+	font-size: 30px;
+	margin-left: 20px;
+}
+
+header a {
+	color: black;
+	text-decoration: none;
+}
+
+header a:hover {
+	color: rgba(0,128,128,1);
+}
+
+.title {
+	font-size: 20px;
 }
 
 nav {
+	margin-right: 20px;
+}
 
+nav a {
+	margin-right: 20px;
+}
+
+.final_link {
+	margin-right: 0px;
 }
 
 main {
+	margin-top: 50px;
 	min-height: calc(100vh - 75px);
 	display: flex;
 	justify-content: center;
@@ -98,7 +129,7 @@ p {
 
 
 footer {
-	background-color: rgba(0,128,128,0.5);
+	background-color: rgba(0,168,168,1);
 	height: 25px;
 	display: flex;
 	align-items: center;
