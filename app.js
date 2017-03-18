@@ -9,9 +9,6 @@ angular
     "$stateProvider",
     RouterFunction
   ])
-  .controller("ConstructionController", [
-    ConstructionControllerFunction
-  ])
   .controller("IndexController", [
     IndexControllerFunction
   ])
@@ -33,18 +30,12 @@ angular
 
   function RouterFunction($stateProvider){
     $stateProvider
-    .state("Construction", {
+    .state("Index", {
       url: "",
-      templateUrl: "ng-views/construction.html",
-      controller: "ConstructionController",
+      templateUrl: "ng-views/index.html",
+      controller: "IndexController",
       controllerAs: "vm"
     })
-    // .state("Index", {
-    //   url: "",
-    //   templateUrl: "ng-views/index.html",
-    //   controller: "IndexController",
-    //   controllerAs: "vm"
-    // })
     // .state("About", {
     //   url: "/about",
     //   templateUrl: "ng-views/about.html",
@@ -76,8 +67,6 @@ angular
     //   controllerAs: "vm"
     // })
   }
-
-  function ConstructionControllerFunction(){}
 
   function IndexControllerFunction(){}
 

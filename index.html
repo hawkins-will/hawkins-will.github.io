@@ -12,19 +12,32 @@
   </head>
   <body>
     <header>
-      <h1>Will Hawkins</h1>
-      <img class="face" src="/images/Will_Mustache.jpg" alt="Will's Glorious Face">
-      <h2>Cardboard-Mustachioed Developer In-Training</h2>
+      <h1 class="name">Will Hawkins <span class="title">full-stack developer</span></h1>
+      <nav>
+        <a data-ui-sref="Index">Home</a>
+        <a data-ui-sref="About">About Me</a>
+        <a data-ui-sref="Skills">Skills</a>
+        <a data-ui-sref="Portfolio">Portfolio</a>
+        <a data-ui-sref="Resume">Resume</a>
+        <a data-ui-sref="Contact">Contact</a>
+      </nav>
     </header>
-    <nav>
-      <a data-ui-sref="Index">Home</a>
-      <a data-ui-sref="About">About Me</a>
-      <a data-ui-sref="Skills">Skills</a>
-      <a data-ui-sref="Portfolio">Portfolio</a>
-      <a data-ui-sref="Resume">Resume</a>
-      <a data-ui-sref="Contact">Contact</a>
-    </nav>
-    <main data-ui-view></main>
+
+    <main>
+      <section class="about_section">
+        <h1>About Section</h1>
+      </section>
+      <section class="skills_section">
+        <h1>Skills Section</h1>
+      </section>
+      <section class="portfolio_section" data-ui-view></section>
+      <section class="resume_section">
+        <h1>Resume Section</h1>
+      </section>
+      <section class="contact_section">
+        Contact Section
+      </section>
+    </main>
     <footer>
       <p>Last Edited February 1st, 2017</p>
     </footer>
