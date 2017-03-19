@@ -154,10 +154,22 @@ section {
 
 .portfolioText {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	flex-grow: 1;
 	height: calc(100vh - 150px);
+}
+
+.portfolioText h4 {
+	font-size: 24px;
+	margin: 10px 150px;
+	line-height: 30px;
+}
+
+.screenshot {
+	width: 600px;
 }
 
 .portfolioLinks {
