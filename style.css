@@ -152,6 +152,16 @@ section {
 	justify-content: space-between;
 }
 
+.portfolioShow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-grow: 1;
+	height: calc(100vh - 150px);
+}
+
 .portfolioText {
 	display: flex;
 	flex-direction: column;
@@ -160,6 +170,7 @@ section {
 	text-align: center;
 	flex-grow: 1;
 	height: calc(100vh - 150px);
+	padding: 20px;
 }
 
 .portfolioText h4 {
@@ -168,8 +179,23 @@ section {
 	line-height: 30px;
 }
 
+.portfolioImage {
+	padding-right: 20px;
+}
+
 .screenshot {
-	width: 600px;
+	width: 500px;
+}
+
+.websiteAndGithub {
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end
+}
+
+.website {
+	font-size: 30px;
 }
 
 .portfolioLinks {
@@ -186,7 +212,7 @@ section {
 	justify-content: center;
 	align-items: center;
 	width: 270px;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 #hanoiThumbnail, #deliverWeThumbnail, #plusOneThumbnail {
