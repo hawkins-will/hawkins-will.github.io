@@ -1,3 +1,33 @@
+var scrollHeadline = function(){
+  $("html, body").animate({
+    scrollTop: $("#headline").offset().top - 50},
+    'slow');
+};
+
+var scrollPortfolio = function(){
+  $("html, body").animate({
+    scrollTop: $("#portfolio").offset().top - 50},
+    'slow');
+};
+
+var scrollAbout = function(){
+  $("html, body").animate({
+    scrollTop: $("#about").offset().top - 50},
+    'slow');
+};
+
+var scrollResume = function(){
+  $("html, body").animate({
+    scrollTop: $("#resume").offset().top - 50},
+    'slow');
+};
+
+var scrollContact = function(){
+  $("html, body").animate({
+    scrollTop: $("#contact").offset().top - 50},
+    'slow');
+};
+
 "use strict"
 
 angular
