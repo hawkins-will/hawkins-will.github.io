@@ -160,23 +160,18 @@ section {
 
 .portfolioShow {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	text-align: center;
 	flex-grow: 1;
 	height: calc(100vh - 150px);
+	width: 100%;
 }
 
 .portfolioText {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	flex-grow: 1;
-	height: calc(100vh - 150px);
-	padding: 40px;
+	text-align: left;
+	padding: 40px 250px 40px 40px;
+	width: 400px;
 }
 
 .portfolioText h4 {
@@ -188,11 +183,15 @@ section {
 .portfolioText p {
 	font-size: 20px;
 	line-height: 26px;
-	margin: 20px 50px;
+	margin: 20px 0;
+}
+
+.portfolioText i {
+	margin: 0 20px;
 }
 
 .portfolioImage {
-	margin-right: 100px;
+	margin-left: 100px;
 }
 
 .portfolioImage img {
@@ -203,15 +202,33 @@ section {
 	width: 500px;
 }
 
-.websiteAndGithub {
+.screenshot:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.website {
 	margin-bottom: 5px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: flex-end
 }
 
 .website {
-	font-size: 30px;
+	font-size: 50px;
+}
+
+.website a {
+	color: black;
+	text-decoration: none;
+}
+
+.website a:hover {
+	opacity: 0.5;
+}
+
+.website img:hover {
+	opacity: 0.5;
 }
 
 .portfolioLinks {
@@ -415,7 +432,29 @@ box-shadow: 2px 2px grey;
 }
 
 .contactMain {
+	flex-direction: row;
+	height: calc(100vh - 200px);
+}
 
+i {
+	margin-right: 20px;
+	color: black;
+}
+
+.iconSpan {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+}
+
+i a {
+	text-decoration: none;
+	color: black;
+}
+
+i:hover {
+	opacity: 0.5;
 }
 
 footer {
