@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <h1 class="name"><a onclick="scrollHeadline()">Will Hawkins</a><span class="title"> full-stack developer</span></h1>
+      <h1 class="name"><a onclick="scrollHeadline()">Will Hawkins</a><span class="subtitle"> full-stack developer</span></h1>
       <nav>
         <a onclick="scrollPortfolio()">Portfolio</a>
         <a onclick="scrollAbout()">About Me</a>
@@ -25,13 +25,17 @@
     <main>
       <section id="headline">
         <div class="headlineMain">
-          <img class="headshot" src="/images/Will_Mustache.jpg" alt="Mustachioed Will">
-          <h1>Hi there! I'm Will and I'm a Full-Stack Developer based in the Washington, DC Area</h1>
+            <img class="headshot" src="/images/will_headshot.jpg" alt="Mustachioed Will">
+          <div class="headlineText">
+            <h1>Hi there! I'm Will, a<br> Full-Stack Developer in DC.</h1>
+            <p>Let me show you around!</p>
+          </div>
         </div>
+        <h1 class="sectionFooter" onclick="scrollPortfolio()"><i class="fa fa-angle-down" aria-hidden="true" style="font-size: 60px;"></i></h1>
       </section>
       <section id="portfolio" data-ui-view></section>
       <section id="about">
-        <h1 class="sectionHeader">About Section</h1>
+        <h1 class="sectionHeader">About Me</h1>
         <div class="aboutMain">
           <div class="aboutPhotos">
             <img class="aboutImage" src="/images/Will_Mustache.jpg" alt="Mustachioed Will">
@@ -41,63 +45,66 @@
           </div>
           <div class="aboutText">
             <p>Hi there! I'm Will Hawkins, a professional <span class="bold">Actor and Singer</span> turned full-stack <span class="bold">Web Developer</span>.
-              <br><br>In April 2017, I completed the <span class="bold">Web Devbelopment Intensive</span> at <span class="bold">General Assembly</span>. For fourteen weeks, I studied full-stack development and found myself thrilled by the challenges I was presented with! I view each project I work on as a puzzle, and I use my artistic background to come up with innovative and creative solutions.
+              <br><br>In April 2017, I completed the <span class="bold">Web Development Intensive</span> at <span class="bold">General Assembly</span>. For fourteen weeks, I studied full-stack development and found myself thrilled by the challenges I was presented with! I view each project I work on as a puzzle, and I use my artistic background to come up with innovative and creative solutions.
               <br><br>After studying Classical Music and Dramatic Art at <span class="bold">UNC - Chapel Hill</span> I moved back to the DC area and have been active in the local Theatre and Music scenes since. I've been fortunate enough to perform at many fantastic venues including The Kennedy Center, The Lincoln Center, and in <span class="italic">The Legend of Zelda</span> Symphonic Concert at The Warner Theatre. I'll never leave this part of me behind, but I'm thrilled with the new directions my life is taking me.</p>
           </div>
         </div>
+        <h1 class="sectionFooter"  onclick="scrollResume()"><i class="fa fa-angle-down" aria-hidden="true" style="font-size: 60px;"></i></h1>
       </section>
       <section id="resume">
         <h1 class="sectionHeader">Resume</h1>
-        <div class="resumeMain">
-          <div class="resumeText">
-            <p class="resumeBlurb">Take a look at my resume to the right.</p>
-            <p class="resumeBlurbTwo">And while you're here, go ahead read some of these "real" quotes about me from "actual" people who "exist." </p>
-            <div class="quoteSection">
-              <div class="quoteBox">
-                <p class="quote">"A Web Developer to rival<br> Spider-Man"</p>
-                <p class="speaker"> ~ Sue Donym</p>
-              </div>
-              <div class="quoteBox">
-                <p class="quote">"He rescued my cat from a tree <span class="italic">and</span> built her an awesome website!"</p>
-                <p class="speaker"> ~ Alli S.</p>
-              </div>
-              <div class="quoteBox">
-                <p class="quote">"I'm so proud of him!"</p>
-                <p class="speaker"> ~ Will's Mother</p>
-              </div>
-              <div class="quoteBox">
-                <p class="quote">"Get out of my basement."</p>
-                <p class="speaker"> ~ Will's Father</p>
-              </div>
-              <div class="quoteBox">
-                <p class="quote">"You're Hired!"</p>
-                <p class="speaker"> ~ You</p>
+          <div class="resumeMain">
+            <div class="resumeText">
+              <p class="resumeTextHeader">Take a look at my resume to the right.</p>
+              <p class="resumeTextHeader">And while you're here, go ahead read some of these "real" quotes about me from "actual" people who "exist." </p>
+              <div class="quoteSection">
+                <div class="quoteBox">
+                  <p class="quote">"A Web Developer to rival<br> Spider-Man"</p>
+                  <p class="speaker"> ~ Sue Donym</p>
+                </div>
+                <div class="quoteBox">
+                  <p class="quote">"He rescued my cat from a tree <span class="italic">and</span> built her an awesome website!"</p>
+                  <p class="speaker"> ~ Alli S.</p>
+                </div>
+                <div class="quoteBox">
+                  <p class="quote">"I'm so proud of him!"</p>
+                  <p class="speaker"> ~ Will's Mother</p>
+                </div>
+                <div class="quoteBox">
+                  <p class="quote">"Get out of my basement."</p>
+                  <p class="speaker"> ~ Will's Father</p>
+                </div>
+                <div class="quoteBox">
+                  <p class="quote">"You're Hired!"</p>
+                  <p class="speaker"> ~ You</p>
+                </div>
               </div>
             </div>
+            <img id="resumeThumbnail" class="resume" src="/images/Resume.jpeg" alt="Will Hawkins' Resume" onclick="document.getElementById('myModal').style.display='block'">
           </div>
-          <img id="resumeThumbnail" class="resume" src="/images/Resume.jpeg" alt="Will Hawkins' Resume" onclick="document.getElementById('myModal').style.display='block'">
+          <div class="skills">
+            <img class="skillLogo" src="/images/html.svg" alt="HTML 5 Logo">
+            <img class="skillLogo" src="/images/javascript.png" alt="Javascript Logo">
+            <img class="skillLogo" src="/images/JQuery.gif" alt="JQuery Logo">
+            <img class="skillLogo" src="/images/ruby.png" alt="Ruby Logo">
+            <img class="skillLogo" src="/images/rails.png" alt="Rails Logo">
+            <img class="skillLogo" src="/images/angular.svg" alt="Angular Logo">
+            <img class="skillLogo" src="/images/ajax.png" alt="Ajax Logo">
+            <img class="skillLogo" src="/images/activeRecord.png" alt="Active Record Logo?">
+            <img class="skillLogo" src="/images/sinatra.jpg" alt="Sinatra Logo">
+            <img class="skillLogo" src="/images/Postgres.png" alt="Postgres Logo">
+            <img class="skillLogo" src="/images/sql.png" alt="SQL Logo">
+            <img class="skillLogo" src="/images/git.png" alt="Git Logo">
+          </div>
+          <h1 class="sectionFooter"  onclick="scrollContact()"><i class="fa fa-angle-down" aria-hidden="true" style="font-size: 60px;"></i></h1>
         </div>
-      <div class="skills">
-        <img class="skillLogo" src="/images/html.svg" alt="HTML 5 Logo">
-        <img class="skillLogo" src="/images/javascript.png" alt="Javascript Logo">
-        <img class="skillLogo" src="/images/JQuery.gif" alt="JQuery Logo">
-        <img class="skillLogo" src="/images/ruby.png" alt="Ruby Logo">
-        <img class="skillLogo" src="/images/rails.png" alt="Rails Logo">
-        <img class="skillLogo" src="/images/angular.svg" alt="Angular Logo">
-        <img class="skillLogo" src="/images/ajax.png" alt="Ajax Logo">
-        <img class="skillLogo" src="/images/activeRecord.png" alt="Active Record Logo?">
-        <img class="skillLogo" src="/images/sinatra.jpg" alt="Sinatra Logo">
-        <img class="skillLogo" src="/images/Postgres.png" alt="Postgres Logo">
-        <img class="skillLogo" src="/images/sql.png" alt="SQL Logo">
-        <img class="skillLogo" src="/images/git.png" alt="Git Logo">
-      </div>
         <div id="myModal" class="modal">
           <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
           <embed class="modal-content" src="/images/Resume.pdf" height="100%">
         </div>
       </section>
       <section id="contact">
-        <h1 class="sectionHeader">Contact</h1>
+        <h1 class="sectionHeader">Contact Me</h1>
         <div class="contactMain">
           <span class="iconSpan"><a href="mailto:willhawkins5778@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="font-size: 48px"></i></a>willhawkins5778@gmail.com</span>
           <span style="font-size: 50px">|</span>
