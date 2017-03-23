@@ -83,6 +83,7 @@ header {
 	font-size: 30px;
 	margin-left: 20px;
 }
+
 .subtitle {
 	font-size: 20px;
 	margin-left: 10px;
@@ -192,18 +193,6 @@ i:hover {
 .italic {
 	font-style: italic;
 }
-
-h2, h3 {
-	font-size: 24px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-p {
-	font-size: 18px;
-}
-
 
 footer {
 	background-color: rgba(0,168,168,1);
