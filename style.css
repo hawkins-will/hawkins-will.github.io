@@ -71,7 +71,7 @@ header {
 	width: 100vw;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 2;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -202,6 +202,7 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	color: white;
 }
 
 /* Headline Specifics */
@@ -344,7 +345,7 @@ footer {
 
 .hanoiLinkBox:hover, .deliverWeLinkBox:hover, .plusOneLinkBox:hover {
 	transform: translateY(-40px);
-	z-index: 2;
+	z-index: 1;
 }
 
 .hanoiLinkBox:hover img, .deliverWeLinkBox:hover img, .plusOneLinkBox:hover img {
@@ -382,6 +383,10 @@ footer {
   	border-radius: 50%;
   	box-shadow: 2px 2px grey;
   }
+
+	.paragraph {
+		margin-bottom: 20px;
+	}
 
  /* Resume Specifics */
  	.resumeMain{
@@ -438,7 +443,7 @@ footer {
  .modal {
  	position: fixed;
  	display: none;
- 	z-index: 2;
+ 	z-index: 3;
  	left: 0;
  	top: 0;
  	padding: 10px 0;
