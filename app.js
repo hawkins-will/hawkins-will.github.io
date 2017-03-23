@@ -74,7 +74,7 @@ angular
     })
     .state("PlusOne", {
       url: "/plusone",
-      templateUrl: "ng-views/PlusOne.html",
+      templateUrl: "ng-views/plusOne.html",
       controller: "PlusOneController",
       controllerAs: "vm"
     })
