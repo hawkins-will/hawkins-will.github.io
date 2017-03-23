@@ -1,3 +1,33 @@
+var scrollHeadline = function(){
+  $("html, body").animate({
+    scrollTop: $("#headline").offset().top - 50},
+    'slow');
+};
+
+var scrollPortfolio = function(){
+  $("html, body").animate({
+    scrollTop: $("#portfolio").offset().top - 50},
+    'slow');
+};
+
+var scrollAbout = function(){
+  $("html, body").animate({
+    scrollTop: $("#about").offset().top - 50},
+    'slow');
+};
+
+var scrollResume = function(){
+  $("html, body").animate({
+    scrollTop: $("#resume").offset().top - 50},
+    'slow');
+};
+
+var scrollContact = function(){
+  $("html, body").animate({
+    scrollTop: $("#contact").offset().top - 50},
+    'slow');
+};
+
 "use strict"
 
 angular
@@ -12,20 +42,14 @@ angular
   .controller("IndexController", [
     IndexControllerFunction
   ])
-  .controller("AboutController", [
-    AboutControllerFunction
+  .controller("HanoiController", [
+    HanoiControllerFunction
   ])
-  .controller("ContactController", [
-    ContactControllerFunction
+  .controller("DeliverWeController", [
+    DeliverWeControllerFunction
   ])
-  .controller("PortfolioController", [
-    PortfolioControllerFunction
-  ])
-  .controller("ResumeController", [
-    ResumeControllerFunction
-  ])
-  .controller("SkillsController", [
-    SkillsControllerFunction
+  .controller("PlusOneController", [
+    PlusOneControllerFunction
   ])
 
   function RouterFunction($stateProvider){
@@ -36,46 +60,30 @@ angular
       controller: "IndexController",
       controllerAs: "vm"
     })
-    // .state("About", {
-    //   url: "/about",
-    //   templateUrl: "ng-views/about.html",
-    //   controller: "AboutController",
-    //   controllerAs: "vm"
-    // })
-    // .state("Contact", {
-    //   url: "/contact",
-    //   templateUrl: "ng-views/contact.html",
-    //   controller: "ContactController",
-    //   controllerAs: "vm"
-    // })
-    // .state("Portfolio", {
-    //   url: "/portfolio",
-    //   templateUrl: "ng-views/portfolio.html",
-    //   controller: "PortfolioController",
-    //   controllerAs: "vm"
-    // })
-    // .state("Resume", {
-    //   url: "/resume",
-    //   templateUrl: "ng-views/resume.html",
-    //   controller: "ResumeController",
-    //   controllerAs: "vm"
-    // })
-    // .state("Skills", {
-    //   url: "/skills",
-    //   templateUrl: "ng-views/skills.html",
-    //   controller: "SkillsController",
-    //   controllerAs: "vm"
-    // })
+    .state("Hanoi", {
+      url: "/hanoi",
+      templateUrl: "ng-views/hanoi.html",
+      controller: "HanoiController",
+      controllerAs: "vm"
+    })
+    .state("DeliverWe", {
+      url: "/deliverwe",
+      templateUrl: "ng-views/deliverWe.html",
+      controller: "DeliverWeController",
+      controllerAs: "vm"
+    })
+    .state("PlusOne", {
+      url: "/plusone",
+      templateUrl: "ng-views/PlusOne.html",
+      controller: "PlusOneController",
+      controllerAs: "vm"
+    })
   }
 
   function IndexControllerFunction(){}
 
-  function AboutControllerFunction(){}
+  function HanoiControllerFunction(){}
 
-  function ContactControllerFunction(){}
+  function DeliverWeControllerFunction(){}
 
-  function PortfolioControllerFunction(){}
-
-  function ResumeControllerFunction(){}
-
-  function SkillsControllerFunction(){}
+  function PlusOneControllerFunction(){}
