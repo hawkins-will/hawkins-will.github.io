@@ -54,7 +54,7 @@ table {
 html {
 	background-color: rgba(0,168,168,1);
 	font-family: 'Quicksand', sans-serif;
-	min-width: 1500px;
+	min-width: 1400px;
 }
 
 body {
@@ -198,7 +198,7 @@ i:hover {
 footer {
 	background-color: rgba(0,168,168,1);
 	height: 25px;
-	min-width: 1500px;
+	min-width: 1400px;
 	width: 100vw;
 	display: flex;
 	align-items: center;
