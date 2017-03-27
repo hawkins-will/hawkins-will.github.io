@@ -501,4 +501,41 @@ footer {
  	font-size: 18px;
  }
 
- 
+
+  /* Mobile Styling */
+
+ @media (max-width: 500px) {
+
+	 * {
+		 min-width: 300px;
+		 max-width: 500px;
+	 }
+
+	 header {
+		 position: absolute;
+		 max-width: 500px;
+		 flex-direction: column;
+		 height: 60px;
+		 background-color: red;
+		 padding-top: 5px;
+	 }
+
+	 nav {
+		 padding-bottom: 5px;
+	 }
+
+	 body {
+		 max-width: 500px;
+	 }
+
+	 .headlineMain {
+		 display: flex;
+		 flex-direction: column;
+		 padding: 0px;
+		 max-width: 500px;
+	 }
+
+	 .skills {
+		 display: none;
+	 }
+ }
