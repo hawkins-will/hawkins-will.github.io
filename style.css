@@ -49,16 +49,30 @@ table {
 }
 
 /* CSS Begins Here */
-/* General CSS */
+
+/* Mobile Styling */
+
+img {
+	width: 100px;
+}
 
 html {
-	background-color: rgba(0,168,168,1);
-	font-family: 'Quicksand', sans-serif;
-	min-width: 1400px;
+ min-width: 300px;
+ max-width: 500px;
+ background-color: rgba(0,168,168,1);
+ font-family: 'Quicksand', sans-serif;
 }
 
 body {
 	background-color: white;
+}
+
+#portfolio, #resume {
+	background-color: rgba(0,168,168,0.1);
+}
+
+body, header, main, section, footer {
+ width: 100vw;
 }
 
 a {
@@ -68,38 +82,11 @@ a {
 }
 
 header {
-	position: fixed;
-	width: 100vw;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 50px;
-	background-color: rgba(0,168,168,1);
-}
-
-.name {
-	font-size: 30px;
-	margin-left: 20px;
-}
-
-.subtitle {
-	font-size: 20px;
-	margin-left: 10px;
-}
-
-nav {
-	margin-right: 20px;
-}
-
-nav a {
-	margin-right: 20px;
-}
-
-.final_link {
-	margin-right: 0px;
+	background: red;
+	height: 25px;
+	padding-top: 5px;
+	text-align: center;
+	/* background-color: rgba(0,168,168,1); */
 }
 
 header, header a {
@@ -110,34 +97,30 @@ header a:hover {
 	color: rgba(0,128,128,1);
 }
 
-main {
-	margin-top: 50px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.name {
+	font-size: 20px;
 }
 
-section {
-	height: calc(100vh - 50px);
-	width: 100%;
+.subtitle {
+	font-size: 15px;
+	margin-left: 10px;
 }
 
-#contact {
-	height: calc(100vh - 75px);
-}
-
-#portfolio, #resume {
-	background-color: rgba(0,168,168,0.1);
+nav {
+ visibility: hidden;
 }
 
 .sectionHeader {
-	font-size: 30px;
-	height: 50px;
+	font-size: 20px;
+	height: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
 	font-weight: bold;
+}
+
+.skills, .sectionFooter {
+ display: none;
 }
 
 .headlineMain, .portfolioMain, .aboutMain, .resumeMain, .contactMain {
@@ -145,7 +128,7 @@ section {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	height: calc(100vh - 150px);
+	padding-bottom: 15px;
 }
 
 .aboutMain, .resumeMain, .contactMain {
@@ -153,30 +136,10 @@ section {
 	padding: 0 100px;
 }
 
-.contactMain {
-	height: calc(100vh - 125px);
-}
-
-.sectionFooter {
-	font-size: 36px;
-	height: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.sectionFooter:hover {
-	background-color: rgba(0,0,0,0.1);
-	opacity: 0.5;
-	cursor: pointer;
-}
-
-
 i {
 	margin-right: 20px;
 	color: black;
 }
-
 
 i a {
 	text-decoration: none;
@@ -197,174 +160,294 @@ i:hover {
 
 footer {
 	background-color: rgba(0,168,168,1);
-	height: 25px;
-	min-width: 1400px;
-	width: 100vw;
+	font-size: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: white;
+	padding: 3px;
 }
 
 /* Headline Specifics */
 
 .headlineMain {
+	padding-top: 15px;
 	flex-direction: row;
 	justify-content: space-around;
-	height: calc(100vh - 100px);
-	padding: 0 100px;
 }
 
-
 .headshot {
-	width: 400px;
+	width: 150px;
 	border-radius: 50%;
 }
 
 .headlineText {
 	display: flex;
 	flex-direction: column;
-	font-size: 36px;
+	font-size: 16px;
 }
 
 .headlineText p {
-	margin-top: 50px;
+	margin-top: 15px;
 }
 
-/* Portfolio Specifics */
 
-.portfolioShow {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	text-align: center;
-	flex-grow: 1;
-	height: calc(100vh - 150px);
-	width: 100%;
-}
+/* Monitor CSS */
 
-.portfolioText {
-	text-align: left;
-	padding: 40px 250px 40px 40px;
-	width: 400px;
-}
+@media (min-width: 500px) {
 
-.portfolioText h4 {
-	font-size: 24px;
-	margin: 10px 150px;
-	line-height: 30px;
-}
+	body, header, main, section, footer  {
+		max-width: 100000px;
+	}
 
-.portfolioIndexText {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	font-size: 24px;
-	height: calc(100vh - 450px);
-}
+	html {
+		min-width: 1400px;
+	}
 
-.portfolioText p {
-	font-size: 20px;
-	line-height: 26px;
-	margin: 20px 0;
-}
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 50px;
+		background-color: rgba(0,168,168,1);
+	}
 
-.portfolioText i {
-	margin: 0 20px;
-}
+	.name {
+		font-size: 30px;
+		margin-left: 20px;
+	}
 
-.portfolioImage {
-	margin-left: 100px;
-}
+	.subtitle {
+		font-size: 20px;
+		margin-left: 10px;
+	}
 
-.portfolioImage img {
-	box-shadow: 2px 2px grey;
-}
+	nav {
+		margin-right: 20px;
+		visibility: visible;
+	}
 
-.screenshot {
-	width: 500px;
-}
+	nav a {
+		margin-right: 20px;
+	}
 
-.screenshot:hover {
-	opacity: 0.5;
-	cursor: pointer;
-}
+	.final_link {
+		margin-right: 0px;
+	}
 
-.website {
-	margin-bottom: 5px;
-	display: flex;
-	justify-content: center;
-	align-items: flex-end
-}
+	main {
+		margin-top: 50px;
+		/*
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		*/
+	}
 
-.website {
-	font-size: 50px;
-}
+	section {
+		height: calc(100vh - 50px);
+		width: 100%;
+	}
 
-.website a {
-	color: black;
-	text-decoration: none;
-}
+	#contact {
+		height: calc(100vh - 75px);
+	}
 
-.website a:hover {
-	opacity: 0.5;
-}
+	.sectionHeader {
+		font-size: 30px;
+		height: 50px;
+	}
 
-.website img:hover {
-	opacity: 0.5;
-}
+	.headlineMain, .portfolioMain, .aboutMain, .resumeMain, .contactMain {
+		height: calc(100vh - 150px);
+	}
 
-.portfolioLinks {
-	display: flex;
-	align-items: flex-end;
-	justify-content: space-around;
-	height: 300px;
-	padding-bottom: 30px;
-}
+	.aboutMain, .resumeMain, .contactMain {
+		flex-direction: row;
+		padding: 0 100px;
+	}
 
-.hanoiLinkBox, .deliverWeLinkBox, .plusOneLinkBox {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 270px;
-	transition: all .3s ease-in-out;
-}
+	.contactMain {
+		height: calc(100vh - 125px);
+	}
 
-.hidden {
-	visibility: hidden;
-	padding: 10px;
-	font-size: 12px;
-	text-align: center;
-}
+	.sectionFooter {
+		font-size: 36px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-.thumbnailTitle {
-	font-size: 16px;
-	font-weight: bold;
-}
+	.sectionFooter:hover {
+		background-color: rgba(0,0,0,0.1);
+		opacity: 0.5;
+		cursor: pointer;
+	}
 
-.hanoiLinkBox:hover, .deliverWeLinkBox:hover, .plusOneLinkBox:hover {
-	transform: translateY(-40px);
-	z-index: 1;
-}
+	footer {
+		font-size: 15px;
+		height: 25px;
+	}
 
-.hanoiLinkBox:hover img, .deliverWeLinkBox:hover img, .plusOneLinkBox:hover img {
-	transform: scale(1.5);
-}
+	/* Headline Specifics */
 
-.hanoiLinkBox:hover .hidden, .deliverWeLinkBox:hover .hidden, .plusOneLinkBox:hover .hidden {
-	visibility: visible;
-	background-color: rgba(245,245,245,1);
-	border-radius: 10px;
-	margin-bottom: 10px;
-	transform: translateY(-30px);
-	box-shadow: 1px 1px grey;
-}
+	.headlineMain {
+		height: calc(100vh - 100px);
+		padding: 0 100px;
+	}
 
-#hanoiThumbnail, #deliverWeThumbnail, #plusOneThumbnail {
-	height: 100px;
-}
+	.headshot {
+		width: 400px;
+	}
+
+	.headlineText {
+		font-size: 36px;
+	}
+
+	.headlineText p {
+		margin-top: 50px;
+	}
+
+	/* Portfolio Specifics */
+
+	.portfolioShow {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		flex-grow: 1;
+		height: calc(100vh - 150px);
+		width: 100%;
+	}
+
+	.portfolioText {
+		text-align: left;
+		padding: 40px 250px 40px 40px;
+		width: 400px;
+	}
+
+	.portfolioText h4 {
+		font-size: 24px;
+		margin: 10px 150px;
+		line-height: 30px;
+	}
+
+	.portfolioIndexText {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size: 24px;
+		height: calc(100vh - 450px);
+	}
+
+	.portfolioText p {
+		font-size: 20px;
+		line-height: 26px;
+		margin: 20px 0;
+	}
+
+	.portfolioText i {
+		margin: 0 20px;
+	}
+
+	.portfolioImage {
+		margin-left: 100px;
+	}
+
+	.portfolioImage img {
+		box-shadow: 2px 2px grey;
+	}
+
+	.screenshot {
+		width: 500px;
+	}
+
+	.screenshot:hover {
+		opacity: 0.5;
+		cursor: pointer;
+	}
+
+	.website {
+		margin-bottom: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end
+	}
+
+	.website {
+		font-size: 50px;
+	}
+
+	.website a {
+		color: black;
+		text-decoration: none;
+	}
+
+	.website a:hover {
+		opacity: 0.5;
+	}
+
+	.website img:hover {
+		opacity: 0.5;
+	}
+
+	.portfolioLinks {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-around;
+		height: 300px;
+		padding-bottom: 30px;
+	}
+
+	.hanoiLinkBox, .deliverWeLinkBox, .plusOneLinkBox {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 270px;
+		transition: all .3s ease-in-out;
+	}
+
+	.hidden {
+		visibility: hidden;
+		padding: 10px;
+		font-size: 12px;
+		text-align: center;
+	}
+
+	.thumbnailTitle {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.hanoiLinkBox:hover, .deliverWeLinkBox:hover, .plusOneLinkBox:hover {
+		transform: translateY(-40px);
+		z-index: 1;
+	}
+
+	.hanoiLinkBox:hover img, .deliverWeLinkBox:hover img, .plusOneLinkBox:hover img {
+		transform: scale(1.5);
+	}
+
+	.hanoiLinkBox:hover .hidden, .deliverWeLinkBox:hover .hidden, .plusOneLinkBox:hover .hidden {
+		visibility: visible;
+		background-color: rgba(245,245,245,1);
+		border-radius: 10px;
+		margin-bottom: 10px;
+		transform: translateY(-30px);
+		box-shadow: 1px 1px grey;
+	}
+
+	#hanoiThumbnail, #deliverWeThumbnail, #plusOneThumbnail {
+		height: 100px;
+	}
  /* About Specifics */
 
  .aboutPhotos {
@@ -500,42 +583,4 @@ footer {
  	align-items: center;
  	font-size: 18px;
  }
-
-
-  /* Mobile Styling */
-
- @media (max-width: 500px) {
-
-	 * {
-		 min-width: 300px;
-		 max-width: 500px;
-	 }
-
-	 header {
-		 position: absolute;
-		 max-width: 500px;
-		 flex-direction: column;
-		 height: 60px;
-		 background-color: red;
-		 padding-top: 5px;
-	 }
-
-	 nav {
-		 padding-bottom: 5px;
-	 }
-
-	 body {
-		 max-width: 500px;
-	 }
-
-	 .headlineMain {
-		 display: flex;
-		 flex-direction: column;
-		 padding: 0px;
-		 max-width: 500px;
-	 }
-
-	 .skills {
-		 display: none;
-	 }
- }
+}
