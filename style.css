@@ -117,6 +117,7 @@ nav {
 	justify-content: center;
 	align-items: flex-end;
 	font-weight: bold;
+	margin-bottom: 15px;
 }
 
 .skills, .sectionFooter {
@@ -131,9 +132,17 @@ nav {
 	padding-bottom: 15px;
 }
 
-.aboutMain, .resumeMain, .contactMain {
+.resumeMain, .contactMain {
 	flex-direction: row;
-	padding: 0 100px;
+}
+
+.aboutMain {
+	flex-direction: column-reverse;
+}
+
+.resumeMain {
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 i {
@@ -168,7 +177,7 @@ footer {
 	padding: 3px;
 }
 
-/* Headline Specifics */
+/* Mobile Headline Specifics */
 
 .headlineMain {
 	padding-top: 15px;
@@ -191,6 +200,121 @@ footer {
 	margin-top: 15px;
 }
 
+/* Mobile About Specifics */
+
+.aboutPhotos {
+	display: flex;
+	width: 100vw;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.hiddenImage {
+	display: none;
+}
+
+.aboutText {
+	font-size: 15px;
+	line-height: 30px;
+	padding: 15px;
+}
+
+ .aboutImage {
+	 width: 100px;
+	 border-radius: 50%;
+	 box-shadow: 2px 2px grey;
+ }
+
+ .paragraph {
+	 margin-bottom: 20px;
+ }
+
+/* Mobile Resume Specifics */
+
+.resume {
+ 	width: 150px;
+	height: 200px;
+ 	box-shadow: 2px 2px grey;
+}
+
+.resume:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.resumeText {
+	padding-right: 15px;
+}
+
+.resumeTextHeader {
+	font-size: 16px;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+.quoteSection {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.quoteBox {
+	width: 45%;
+}
+
+.quote {
+	font-size: 12px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.speaker {
+	text-align: right;
+	margin-top: 5px;
+	margin-right: 20px;
+	font-size: 10px;
+}
+
+
+.modal {
+	position: fixed;
+	display: none;
+	z-index: 3;
+	left: 0;
+	top: 0;
+	padding: 10px 0;
+	width: 100vw;
+	height: calc(100vh - 20px);
+	overflow: auto;
+	background-color: rgba(0,0,0,0.7);
+	border: 1px solid black;
+}
+
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 90%;
+	max-width: 700px;
+}
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
 
 /* Monitor CSS */
 
@@ -202,6 +326,11 @@ footer {
 
 	html {
 		min-width: 1400px;
+	}
+
+	.hiddenImage {
+		display: block;
+		visibility: hidden;
 	}
 
 	header {
@@ -261,6 +390,7 @@ footer {
 	.sectionHeader {
 		font-size: 30px;
 		height: 50px;
+		margin-bottom: 0px;
 	}
 
 	.headlineMain, .portfolioMain, .aboutMain, .resumeMain, .contactMain {
