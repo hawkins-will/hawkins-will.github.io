@@ -82,11 +82,10 @@ a {
 }
 
 header {
-	background: red;
 	height: 25px;
 	padding-top: 5px;
 	text-align: center;
-	/* background-color: rgba(0,168,168,1); */
+	background-color: rgba(0,168,168,1);
 }
 
 header, header a {
@@ -129,11 +128,7 @@ nav {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	padding-bottom: 15px;
-}
-
-.resumeMain, .contactMain {
-	flex-direction: row;
+	padding: 20px;
 }
 
 .aboutMain {
@@ -141,8 +136,19 @@ nav {
 }
 
 .resumeMain {
+	flex-direction: row;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contactMain {
+	align-items: flex-start;
 }
 
 i {
@@ -169,12 +175,12 @@ i:hover {
 
 footer {
 	background-color: rgba(0,168,168,1);
-	font-size: 10px;
+	font-size: 12px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: white;
-	padding: 3px;
+	padding: 4px 0;
 }
 
 /* Mobile Headline Specifics */
@@ -200,6 +206,101 @@ footer {
 	margin-top: 15px;
 }
 
+/* Mobile Portfolio Specifics */
+
+.portfolioIndexText {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.portfolioText {
+}
+
+.portfolioText p {
+	font-size: 15px;
+	line-height: 20px;
+	margin: 15px 0;
+}
+
+.portfolioText i {
+	margin: 0 20px;
+}
+
+.portfolioImage {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.portfolioImage img {
+	box-shadow: 2px 2px grey;
+}
+
+.screenshot {
+	width: 250px;
+}
+
+.screenshot:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.website {
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-size: 18px;
+}
+
+.website a {
+	color: black;
+	text-decoration: none;
+}
+
+.website a:hover {
+	opacity: 0.5;
+}
+
+.website img:hover {
+	opacity: 0.5;
+}
+
+.portfolioLinks {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+}
+
+.hanoiLinkBox, .deliverWeLinkBox, .plusOneLinkBox {
+	display: flex;
+	width: 33%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.hidden {
+	padding: 10px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.thumbnailTitle {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#hanoiThumbnail, #deliverWeThumbnail, #plusOneThumbnail {
+	height: 75px;
+}
+
 /* Mobile About Specifics */
 
 .aboutPhotos {
@@ -217,7 +318,6 @@ footer {
 .aboutText {
 	font-size: 15px;
 	line-height: 30px;
-	padding: 15px;
 }
 
  .aboutImage {
@@ -316,6 +416,20 @@ footer {
 	cursor: pointer;
 }
 
+/* Mobile Contact Specifics */
+
+.iconSpan {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+
+.contactBreak {
+	display: none;
+}
+
 /* Monitor CSS */
 
 @media (min-width: 500px) {
@@ -385,6 +499,7 @@ footer {
 
 	#contact {
 		height: calc(100vh - 75px);
+		display: block;
 	}
 
 	.sectionHeader {
@@ -404,6 +519,7 @@ footer {
 
 	.contactMain {
 		height: calc(100vh - 125px);
+		align-items: center;
 	}
 
 	.sectionFooter {
@@ -423,6 +539,7 @@ footer {
 	footer {
 		font-size: 15px;
 		height: 25px;
+		padding: 0px;
 	}
 
 	/* Headline Specifics */
@@ -532,7 +649,7 @@ footer {
 		display: flex;
 		align-items: flex-end;
 		justify-content: space-around;
-		height: 300px;
+		height: 200px;
 		padding-bottom: 30px;
 	}
 
@@ -578,6 +695,11 @@ footer {
 	#hanoiThumbnail, #deliverWeThumbnail, #plusOneThumbnail {
 		height: 100px;
 	}
+
+	#portfolio .sectionFooter {
+		margin-top: -40px;
+	}
+
  /* About Specifics */
 
  .aboutPhotos {
@@ -712,5 +834,11 @@ footer {
  	justify-content: center;
  	align-items: center;
  	font-size: 18px;
+	margin-bottom: 0px;
+ }
+
+ .contactBreak {
+	 font-size: 50px;
+	 display: block;
  }
 }
