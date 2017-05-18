@@ -843,7 +843,7 @@ footer {
  }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 735px) and (max-width: 1300px) {
 
 	.aboutMain {
 		flex-direction: column-reverse;
@@ -910,7 +910,7 @@ footer {
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 735px) and (max-width: 900px) {
 
 	.aboutImage {
 		width: 150px;
@@ -943,7 +943,7 @@ footer {
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 735px) and (max-width: 1000px) {
 	.skillLogo {
 	 width: 70px;
 	}
