@@ -435,14 +435,10 @@ footer {
 
 /* Monitor CSS */
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 735px) {
 
 	body, header, main, section, footer  {
 		max-width: 100000px;
-	}
-
-	html {
-		min-width: 1400px;
 	}
 
 	.hiddenImage {
@@ -460,6 +456,7 @@ footer {
 		align-items: center;
 		height: 50px;
 		background-color: rgba(0,168,168,1);
+		padding-top: 0px;
 	}
 
 	header a:hover {
@@ -727,10 +724,6 @@ footer {
   	box-shadow: 2px 2px grey;
   }
 
-	.paragraph {
-		margin-bottom: 20px;
-	}
-
  /* Resume Specifics */
  	.resumeMain{
 		height: calc(100vh - 200px);
@@ -848,4 +841,110 @@ footer {
 	 font-size: 50px;
 	 display: block;
  }
+}
+
+@media screen and (max-width: 1300px) {
+
+	.aboutMain {
+		flex-direction: column-reverse;
+	}
+
+	.aboutPhotos {
+		display: flex;
+		width: 100vw;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.aboutImage {
+		width: 200px;
+		border-radius: 50%;
+		box-shadow: 2px 2px grey;
+	}
+
+	.hiddenImage {
+		display: none;
+	}
+
+	.aboutText {
+		font-size: 18px;
+		line-height: 22px;
+		width: auto;
+		margin-left: 0px;
+	}
+
+	.paragraph {
+		margin-bottom: 16px;
+	}
+
+	.portfolioText {
+		padding-right: 20px;
+	}
+
+	.screenshot {
+		width: 300px;
+	}
+
+	#contact {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.contactMain {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 20px;
+	}
+
+	.contactBreak {
+		display: none;
+	}
+
+	.iconSpan {
+		margin-bottom: 25px;
+	}
+
+}
+
+@media screen and (max-width: 900px) {
+
+	.aboutImage {
+		width: 150px;
+		border-radius: 50%;
+		box-shadow: 2px 2px grey;
+	}
+
+	.resume {
+		width: 240px;
+		height: 320px;
+	}
+
+	.quote {
+		font-size: 14px;
+	}
+
+	.speaker {
+		font-size: 10px;
+	}
+
+	.portfolioText p {
+		font-size: 15px;
+		line-height: 20px;
+		margin: 15px 0;
+	}
+
+	.hanoiLinkBox, .deliverWeLinkBox, .plusOneLinkBox {
+		width: 245px;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+	.skillLogo {
+	 width: 70px;
+	}
 }
