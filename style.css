@@ -516,7 +516,7 @@ footer {
 		height: calc(100vh - 150px);
 	}
 
-	.aboutMain, .resumeMain, .contactMain {
+	.headlineMain, .aboutMain, .resumeMain, .contactMain {
 		flex-direction: row;
 		padding: 0 100px;
 	}
@@ -944,7 +944,12 @@ footer {
 }
 
 @media screen and (min-width: 735px) and (max-width: 1000px) {
+	
 	.skillLogo {
 	 width: 70px;
+	}
+
+	.headlineMain {
+		flex-direction: column;
 	}
 }
